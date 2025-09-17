@@ -1,0 +1,42 @@
+<section class="models section" id="models">
+    <h2 class="section__title">
+        Ofrecemos una <br>
+        amplia variedad de servicios
+    </h2>
+
+    <div class="models__container container grid">
+        <article class="models__card">
+            <div class="models__image-wrapper">
+                <img src="assets/Fs_All_Tp_FirestoneAllSeason_60_Hr.png" alt="imagen" class="models__img">
+            </div>
+            <div class="models__gradient"></div>
+            <div class="models__data">
+                <h3 class="models__name">Venta de llantas</h3>
+                <span class="models__info">Amplio catálogo de marcas: Bridgestone, Potenza, Alenza, Turanza,
+                    entre otras</span>
+            </div>
+        </article>
+
+        <article class="models__card">
+            <div class="models__image-wrapper">
+                <img src="assets/refacciones.jpg" alt="imagen" class="models__img">
+            </div>
+            <div class="models__gradient"></div>
+            <div class="models__data">
+                <h3 class="models__name">Servicio automotriz integral</h3>
+                <span class="models__info">Cambio e instalación de llantas, alineación y balanceo.</span>
+            </div>
+        </article>
+
+        <article class="models__card">
+            <div class="models__image-wrapper">
+                <img src="assets/llanta1.png" alt="imagen" class="models__img">
+            </div>
+            <div class="models__gradient"></div>
+            <div class="models__data">
+                <h3 class="models__name">Atención y experiencias complementarias</h3>
+                <span class="models__info">Atención rápida, diagnósticos precisos, precios transparentes</span>
+            </div>
+        </article>
+    </div>
+</section>

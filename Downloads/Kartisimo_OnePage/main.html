@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kartisimo</title>
+
+    <!-- Estilos principales -->
+    <link rel="stylesheet" href="style/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" />
+
+    <!-- Fuente para el nuevo slider -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+    <!-- GSAP (necesario para el slider) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+</head>
+
+<body>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#home" class="nav__logo">
+                <img src="assets/Logotipo_Kartisimo_SinFondo.png" alt="Kartisimo" class="header__logo-img" />
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li><a href="#home" class="nav__link active-link">Inicio</a></li>
+                    <li><a href="#about" class="nav__link">Conocénos</a></li>
+                    <li><a href="#models" class="nav__link">Servicios</a></li>
+                    <li><a href="#contact" class="nav__link">Contacto</a></li>
+                    <li><a href="#info" class="nav__link">Sucursales</a></li>
+                </ul>
+                <div class="nav__close" id="nav-close"><i class="ri-close-large-line"></i></div>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle"><i class="ri-menu-line"></i></div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <!-- ========== HERO (REEMPLAZADO CON SLIDER PREMIUM) ========== -->
+        <section class="slider-container" id="home">
+            <aside class="side-nav left-nav">
+                <div class="slide-indicators">
+                    <!-- Se generará dinámicamente -->
+                </div>
+            </aside>
+
+            <aside class="side-nav right-nav">
+                <!-- Espacio para futuros elementos si se necesitan -->
+            </aside>
+
+            <div class="slides-wrapper">
+                <!-- Slide 1 -->
+                <section class="slide" data-bg="assets/Bridgestone_Product_Q42021Production_AlenzaASUltra_image13.jpg">
+                    <div class="slide-content">
+                        <span class="proverb">KARTISIMO</span>
+                        <h1 class="quote">Calidad sobre ruedas; Llantas, servicio y atención personalizada en León.</h1>
+                        <a href="#about" class="explore-btn">CONÓCENOS</a>
+                    </div>
+                </section>
+                <!-- Slide 2 -->
+                <section class="slide" data-bg="assets/021197_n01_Firestone_Firehwawk8375_RYN19905.jpg">
+                    <div class="slide-content">
+                        <span class="proverb">PROMOCIÓN</span>
+                        <h1 class="quote">20% de descuento en llantas Bridgestone seleccionadas.</h1>
+                        <a href="#models" class="explore-btn">VER SERVICIOS</a>
+                    </div>
+                </section>
+                <!-- Slide 3 -->
+                <section class="slide" data-bg="assets/istockphoto-1364951753-612x612.jpg">
+                    <div class="slide-content">
+                        <span class="proverb">SEGURIDAD</span>
+                        <h1 class="quote">Alineación y balanceo para el máximo rendimiento de tu vehículo.</h1>
+                        <a href="#contact" class="explore-btn">AGENDAR CITA</a>
+                    </div>
+                </section>
+            </div>
+        </section>
+
+        <!-- ========== ABOUT ========== -->
+        <section class="about section" id="about">
+            <div class="about__container container grid">
+                <div class="about__data">
+                    <h2 class="section__title about__title">
+                        <span>KARTISIMO</span><br />
+                        Tu mejor opción
+                    </h2>
+                    <p class="about__description">
+                        En Kartisimo encontrarás la mejor solución en llantas y mantenimiento automotriz en León de los
+                        Aldama. Con más de 30 años de experiencia, ofrecemos atención personalizada, servicio rápido y
+                        precios transparentes.
+                    </p>
+                </div>
+                <div class="about__video">
+                    <video src="assets/1-1 15 Seg Turanza 6.mp4" autoplay muted loop class="about__file"></video>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== MODELS ========== -->
+        <section class="models section" id="models">
+            <h2 class="section__title">Ofrecemos una amplia variedad de servicios</h2>
+            <div class="models__container container grid">
+                <article class="models__card">
+                    <div class="models__image-wrapper"><img src="assets/021197_n01_Firestone_Firehwawk8375_RYN19905.jpg"
+                            alt="Venta de llantas" class="models__img"></div>
+                    <div class="models__gradient"></div>
+                    <div class="models__data">
+                        <h3 class="models__name">Venta de llantas</h3>
+                        <span class="models__info">Amplio catálogo de las mejores marcas.</span>
+                    </div>
+                </article>
+                <article class="models__card">
+                    <div class="models__image-wrapper"><img src="assets/refacciones.jpg" alt="Servicio automotriz"
+                            class="models__img"></div>
+                    <div class="models__gradient"></div>
+                    <div class="models__data">
+                        <h3 class="models__name">Servicio automotriz integral</h3>
+                        <span class="models__info">Alineación, balanceo, cambio de aceite y más.</span>
+                    </div>
+                </article>
+                <article class="models__card">
+                    <div class="models__image-wrapper"><img src="assets/istockphoto-1364951753-612x612.jpg"
+                            alt="Atención personalizada" class="models__img"></div>
+                    <div class="models__gradient"></div>
+                    <div class="models__data">
+                        <h3 class="models__name">Atención personalizada</h3>
+                        <span class="models__info">Diagnósticos precisos y precios transparentes.</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- ========== CONTACT (actualizado para mostrar sucursales 2x2) ========== -->
+        <section class="contact section" id="contact">
+            <div class="contact__container container grid">
+                <!-- Columna izquierda: información de contacto y sucursales -->
+                <div class="contact__content">
+                    <h2 class="section__title contact__title">¡Contáctanos!</h2>
+
+                    <!-- Botón/Link principal WhatsApp -->
+                    <div class="footer__social contact__title" style="margin-bottom:.5rem;">
+                        <a href="https://api.whatsapp.com/send?phone=%2B524777540058" class="footer__social-link"
+                            style="display:inline-flex;align-items:center;">
+                            <i class="ri-whatsapp-fill icono__wsp" aria-hidden="true"></i>
+                            <span class="contact__text" style="font-weight:700; font-size: larger;">+52 477 754
+                                0058</span>
+                        </a>
+                    </div>
+
+                    <!-- Grid de sucursales (2 por fila en pantallas >=576px) -->
+                    <div class="contact__branches" aria-label="Teléfonos de sucursales">
+                        <div class="contact__branch">
+                            <div class="branch-name">Delta</div>
+                            <div class="branch-contact">Tel. 477 330 6060 y 477 390 5090 — delta@kartisimo.mx</div>
+                        </div>
+                        <div class="contact__branch">
+                            <div class="branch-name">Torres Landa</div>
+                            <div class="branch-contact">Tel. 477 123 4567 — torreslanda@kartisimo.mx</div>
+                        </div>
+                        <div class="contact__branch">
+                            <div class="branch-name">López Mateos</div>
+                            <div class="branch-contact">Tel. 477 234 5678 — lopezmateos@kartisimo.mx</div>
+                        </div>
+                        <div class="contact__branch">
+                            <div class="branch-name">Martinica</div>
+                            <div class="branch-contact">Tel. 477 345 6789 — martinica@kartisimo.mx</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Columna derecha: imagen o elemento visual -->
+                <img src="assets/2023_Bridgestone_Product_Q1ContentProd_AlenzaASUltra_1.jpg" alt="Taller mecánico"
+                    class="contact__img" />
+            </div>
+        </section>
+
+        <!-- ========== INFO ========== -->
+        <section class="info section" id="info">
+            <h2 class="section__title">Conoce nuestras sucursales</h2>
+            <div class="info__container container grid">
+                <div class="info__content">
+                    <iframe class="info__img info__map"
+                        src="https://www.google.com/maps/d/u/0/embed?mid=1PvZ07i4Bq_vG_MybejTZP54rhO0etwc&ehbc=2E312F&noprof=1"
+                        title="Mapa de sucursales Kartisimo" allowfullscreen></iframe>
+                </div>
+                <div class="info__data">
+                    <div class="info__group">
+                        <h3>Torres Landa</h3>
+                        <p>Blvrd Torres Landa Pte 1901, La Piscina, 37440 León, Gto.</p>
+                    </div>
+                    <div class="info__group">
+                        <h3>López Mateos</h3>
+                        <p>Blvd. Adolfo Lopez Mateos 827, Obrera, 37340 León, Gto.</p>
+                    </div>
+                    <div class="info__group">
+                        <h3>Martinica</h3>
+                        <p>Blvd. Mariano Escobedo Pte. 2715, La Martinica, 37500 León, Gto.</p>
+                    </div>
+                    <div class="info__group">
+                        <h3>Delta</h3>
+                        <p>Blvd. Delta 2002, Valle de Jerez, 37538 León, Gto.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="footer__container container grid">
+            <a href="#home" class="footer__logo"><img src="assets/Logotipo Kartisimo Blanco V1.png" alt="Kartisimo Logo"
+                    class="footer__logo-img" /></a>
+            <ul class="footer__links">
+                <li><a href="#" class="footer__link">Terminos y Condiciones</a></li>
+                <li><a href="#about" class="footer__link">Conocenos</a></li>
+                <li><a href="#models" class="footer__link">Servicios</a></li>
+                <li><a href="#contact" class="footer__link">Contacto</a></li>
+                <li><a href="#info" class="footer__link">Sucursales</a></li>
+            </ul>
+            <div class="footer__social">
+                <a href="https://www.facebook.com/llantas.kartisimo/" class="footer__social-link"><i
+                        class="ri-facebook-circle-fill"></i></a>
+                <a href="https://www.instagram.com/kartisimo_llantas/" class="footer__social-link"><i
+                        class="ri-instagram-fill"></i></a>
+                <a href="https://api.whatsapp.com/send?phone=%2B524777540058"
+                    class="footer__social-link"><i class="ri-whatsapp-fill"></i></a>
+            </div>
+        </div>
+        <span class="footer__copy">&#169; 2025 Kartisimo. Todos los derechos reservados.</span>
+    </footer>
+
+    <a href="#" class="scrollup" id="scroll-up"><i class="ri-arrow-up-line"></i></a>
+
+    <!-- Librerías y scripts -->
+    <script src="js/main.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+</body>
+
+</html>
+
